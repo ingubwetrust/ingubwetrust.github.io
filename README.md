@@ -1,2 +1,0 @@
-# ingubwetrust.github.io
-description
