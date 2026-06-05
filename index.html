@@ -1,73 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-      <style>
-      Table {
-        color: rgb(194, 16, 16);
-        font-family: verdana;
-        font-size:  100%;
-      }
-      table {
-        border: 2px solid rgb(77, 6, 6);
-        margin: 50px;
-      }
-      </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tadpol Slaughter</title>
+    <style>
+        body {
+            background-color: green;
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
 
-  <h1 style ="background-color:rgb(29, 133, 25);"> Tadpol Slaughter</h1>
+        h1 {
+            text-align: center;
+            font-size: 48px;
+            margin-bottom: 30px;
+        }
 
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .game-section {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .game-section h2 {
+            font-size: 24px;
+            border-bottom: 2px solid white;
+            padding-bottom: 10px;
+        }
+
+        .game-section p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: 2px solid white;
+            border-radius: 5px;
+        }
+
+        .tadpole-image {
+            width: 200px;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .ratings {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .rating-item {
+            background-color: rgba(255, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px;
+            flex: 1;
+            min-width: 150px;
+        }
+
+        a {
+            color: #ffff00;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+    </style>
 </head>
+<body>
+    <h1>Tadpol Slaughter</h1>
 
-<body style="background-color: rgb(20, 153, 113);">
+    <div class="container">
+        <!-- The Game -->
+        <div class="game-section">
+            <h2>The Game</h2>
+            <iframe src="https://academy.cs.cmu.edu/sharing/cornSilkFrog760233/embed" title="Tadpol Slaughter Game"></iframe>
+        </div>
 
-<iframe width="410" height="460"
-   src="https://academy.cs.cmu.edu/sharing/cornSilkFrog760233/embed"> 
- </iframe>
-<div>
- 
-  <h2>Why did I make this game?</h2>
-  <p>I made this game becaue I believe that no tapols should ever mature into frogs. I believe this because I lost my beatiful collection of flys to a large group of frogs, it was extremly tramatizing, I still get nightmares about them comming back and eating my current collection.</p>
-</div>
+        <!-- Description -->
+        <div class="game-section">
+            <h2>Why I Created This Game</h2>
+            <p>
+                My fly collection was eaten by frogs, so I can't let the tadpoles through to mature. 
+                This game lets me protect my flies by stopping tadpoles before they become full-grown frogs!
+            </p>
+        </div>
 
-<h2> How to play</h2>
-<ol>
-  <li>Click on Tadpol</li>
-  <li>Move saw to obliterate Tadpol</li>
-  <li>Have fun you defender of my flys</li>
-</ol>
-<h2> What not to do</h2>
-<ul>
-  <li>die <br><span style="color:red">once</span></li>
-  <li>die <br><span style="color:rgb(177, 0, 0)">twice</span></li>
-  <li>die <br><span style="color:rgb(70, 0, 0)">thrice</span></li>
-</ul>
+        <!-- How to Play -->
+        <div class="game-section">
+            <h2>How to Play</h2>
+            <p>Move the saw up and down to kill the tadpoles and protect your fly collection!</p>
+        </div>
 
-<table>
-  <tr>
-    <th>Blod spater uno</th>
-    <th>bleed spitter dos</th>
-    <th>blonk spoofer tres</th>
-  </tr>
-  <tr>
-    <td>9/10</td>
-    <td>3/10</td>
-    <td>7/10</td>
-  </tr>
-  <tr>
-    <td>soild shape and stain.</td>
-    <td>not wide enough not enough shape isnt as good.</td>
-    <td>pretty basic but nothings really that worng</td>
-  </tr>
- 
-</table>
-<form>
-  <label for="TpolK">Tapols Massacred:</label><br>
-  <input type="text" id="TpolK" name="TpolK"><br>
-</form>
-<a href="https://www.britannica.com/science/tadpole">Britannica Tadpol</a>
-<img src="https://cdn.britannica.com/20/231520-050-9DF96017/tadpole-common-frog-amphibian.jpg" alt="big ol tadpol">
+        <!-- Tadpole Image -->
+        <div class="game-section">
+            <h2>What's a Tadpole?</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Tadpole_of_Rana_temporaria.jpg/320px-Tadpole_of_Rana_temporaria.jpg" alt="A tadpole" class="tadpole-image">
+            <p><a href="https://en.wikipedia.org/wiki/Tadpole" target="_blank">Learn more about tadpoles</a></p>
+        </div>
+
+        <!-- Blood Splatter Ratings -->
+        <div class="game-section">
+            <h2>Blood Splatter Ratings</h2>
+            <div class="ratings">
+                <div class="rating-item">
+                    <h3>1 Splatter</h3>
+                    <p>Light hit</p>
+                </div>
+                <div class="rating-item">
+                    <h3>2 Splatters</h3>
+                    <p>Good hit</p>
+                </div>
+                <div class="rating-item">
+                    <h3>3 Splatters</h3>
+                    <p>Perfect hit!</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
-
 </html>
-
-
